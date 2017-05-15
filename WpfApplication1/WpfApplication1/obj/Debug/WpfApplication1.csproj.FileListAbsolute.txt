@@ -1,1 +1,17 @@
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\MainWindow - Copy.baml
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Window1.baml
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\MainWindow - Copy.g.cs
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Window1.g.cs
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Debug.baml
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Debug.g.cs

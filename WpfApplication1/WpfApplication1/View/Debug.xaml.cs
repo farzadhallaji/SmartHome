@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApplication1
+namespace WpfApplication1.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Debug.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Debug : UserControl
     {
-        public MainWindow()
+        public Debug()
         {
             InitializeComponent();
         }
