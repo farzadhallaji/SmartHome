@@ -12,28 +12,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WpfApplication1.Model;
-using WpfApplication1.ViewModel;
 
 namespace WpfApplication1.View
 {
     /// <summary>
-    /// Interaction logic for Window2.xaml
+    /// Interaction logic for Window3.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Window3 : Window
     {
-        public Window2()
+        public Window3()
         {
             InitializeComponent();
+
             this.DataContext = GlobalVar.viewModel;
             Closing += GlobalVar.viewModel.OnWindowClosing;
-
         }
-
-        private void CloseAllWindows()
-        {
-            for (int intCounter = App.Current.Windows.Count - 1; intCounter >= 0; intCounter--)
-                App.Current.Windows[intCounter].Close();
-        }
-
     }
 }

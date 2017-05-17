@@ -1,4 +1,4 @@
-﻿<Window x:Class="WpfApplication1.View.Window2"
+﻿<Window x:Class="WpfApplication1.View.Window3"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:toolkitLayout="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Layout.Toolkit"
@@ -8,14 +8,14 @@
         Height="700"
         Width="1000"
         WindowStartupLocation="CenterScreen">
-    
+
     <Grid>
-        
+
         <TabControl Margin="5" >
             <TabItem Header="Debug">
 
                 <Grid>
-                    
+
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
                         <RowDefinition Height="*"/>
@@ -58,13 +58,13 @@
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBox Grid.Column="0" Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}" Margin="5 5 0 5" FontFamily="Consolas"
+                                <TextBox Grid.Column="0"  Text="{Binding InputText2, UpdateSourceTrigger=PropertyChanged}" Margin="5 5 0 5" FontFamily="Consolas"
                          VerticalContentAlignment="Center">
                                     <TextBox.InputBindings>
-                                        <KeyBinding Command="{Binding Send}" Key="Return"/>
+                                        <KeyBinding Command="{Binding Send2}" Key="Return"/>
                                     </TextBox.InputBindings>
                                 </TextBox>
-                                <Button Grid.Column="1" Command="{Binding Send}" Content="Send" Margin="5" Padding="10 3"/>
+                                <Button Grid.Column="1" Command="{Binding Send2}" Content="Send" Margin="5" Padding="10 3"/>
                             </Grid>
                         </GroupBox>
                     </Grid>
@@ -73,6 +73,6 @@
 
             </TabItem>
         </TabControl>
-        
+
     </Grid>
 </Window>

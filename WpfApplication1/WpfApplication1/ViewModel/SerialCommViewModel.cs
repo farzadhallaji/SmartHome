@@ -180,9 +180,13 @@ namespace WpfApplication1.ViewModel
                 logger.Log(LogLevel.Debug, "Ready to receive data...");
 
                 var Window = Application.Current.Windows[0];
-
-                Window2 Window2 = new Window2();
                 Window.Hide();
+
+                //Window2 Window2 = new Window2();
+
+                //Window2.Show();
+
+                Window3 Window2 = new Window3();
 
                 Window2.Show();
 
@@ -222,16 +226,16 @@ namespace WpfApplication1.ViewModel
             }
         }
 
-        //public ICommand Send2
-        //{
-        //    get
-        //    {
-        //        _Send = new RelayCommand(
-        //            param => WriteData(),
-        //            param => _SerialPort != null && _SerialPort.IsOpen);
-        //        return _Send;
-        //    }
-        //}
+        public ICommand Send2
+        {
+            get
+            {
+                _Send = new RelayCommand(
+                    param => WriteData2(),
+                    param => _SerialPort != null && _SerialPort.IsOpen);
+                return _Send;
+            }
+        }
 
         public ICommand Clear
         {
@@ -439,13 +443,23 @@ namespace WpfApplication1.ViewModel
             {
                 try
                 {
-                    _SerialPort.Write(InputText2);
+                    string hexOutput="";
+
+                    foreach (char letter in InputText2) {
+
+                        int value = Convert.ToInt32(letter);
+
+                        hexOutput = String.Format("{0:X}", value);
+
+                        Console.WriteLine("Hexadecimal value of {0} is {1}", letter, hexOutput);
+
+                        }
 
 
-
-
+                    _SerialPort.Write("ARAY H"+hexOutput + SelectedLineEnding);
                     //////////////////////////////////////////////////////////////////////////
                     InputText2 = String.Empty;
+
                     OnPropertyChanged("InputText2");
                 }
                 catch (Exception ex)

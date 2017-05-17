@@ -26,4 +26,16 @@ C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\ConnectingSetting.baml
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\ConnectingSetting.g.cs
-C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Window3.g.cs
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Window3.baml

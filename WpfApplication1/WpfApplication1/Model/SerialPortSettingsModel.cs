@@ -102,9 +102,9 @@ namespace WpfApplication1.Model
         {
             List<SerialPortSettingsModel> returnLineEndings = new List<SerialPortSettingsModel>();
             returnLineEndings.Add(new SerialPortSettingsModel() { LineEndingName = "No line ending", LineEndingChars = "" });
-            returnLineEndings.Add(new SerialPortSettingsModel() { LineEndingName = "Newline (\n)", LineEndingChars = "\n" });
-            returnLineEndings.Add(new SerialPortSettingsModel() { LineEndingName = "Carriage return (\r)", LineEndingChars = "\r" });
-            returnLineEndings.Add(new SerialPortSettingsModel() { LineEndingName = "Both NL & CR (\r\n)", LineEndingChars = "\r\n" });
+            returnLineEndings.Add(new SerialPortSettingsModel() { LineEndingName = "\\n", LineEndingChars = "\n" });
+            returnLineEndings.Add(new SerialPortSettingsModel() { LineEndingName = "\\r", LineEndingChars = "\r" });
+            returnLineEndings.Add(new SerialPortSettingsModel() { LineEndingName = "\\r\\n", LineEndingChars = "\r\n" });
             return returnLineEndings;
         }
         #endregion

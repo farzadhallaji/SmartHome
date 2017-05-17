@@ -4,7 +4,7 @@
         ResizeMode="NoResize"
         xmlns:local="clr-namespace:WpfApplication1.View"
         Icon="..\Images\paste.png"
-        Title="Connecting" Height="286.205" Width="495.404">
+        Title="Connecting" Height="308.044" Width="495.404">
     <!--<Grid>
 
         <Grid.RowDefinitions>
@@ -182,6 +182,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0 5 0 5">
                     <Label Content="COM* port:" Width="90" Foreground="#FF555555"/>
@@ -204,6 +205,7 @@
                     <Label Content="Stop bits:" Margin="20 0 0 0" Foreground="#FF555555"/>
                     <ComboBox ItemsSource="{Binding StopBitsList}" DisplayMemberPath="StopBitsName" SelectedValue="{Binding SelectedStopBits, Mode=TwoWay}" SelectedValuePath="StopBitsValue"
                                       IsEnabled="{Binding EnableDisableSettings}" MinWidth="100"/>
+
                 </StackPanel>
                 <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0 0 0 5">
                     <CheckBox VerticalAlignment="Center" VerticalContentAlignment="Center" IsChecked="{Binding IsDTR, Mode=TwoWay}" Content="Data Terminal Ready" Margin="85 0 0 0"
@@ -211,6 +213,16 @@
                     <CheckBox VerticalAlignment="Center" VerticalContentAlignment="Center" IsChecked="{Binding IsRTS, Mode=TwoWay}" Content="Request To Send" Margin="20 0 0 0"
                                       IsEnabled="{Binding EnableDisableSettings}"/>
                 </StackPanel>
+
+                <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="0 0 0 5">
+                    <!--<Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>-->
+                    <Label Content="End Line:" Width="90" Foreground="#FF555555"/>
+                    <ComboBox  VerticalContentAlignment="Center" VerticalAlignment="Center" ItemsSource="{Binding LineEndings}" DisplayMemberPath="LineEndingName"  SelectedValue="{Binding SelectedLineEnding, Mode=TwoWay}" SelectedValuePath="LineEndingChars"/>
+                </StackPanel>
+                
             </Grid>
         </GroupBox>
         <GroupBox Grid.Row="1" Header="Switch" Margin="17,0,17,17" >
