@@ -2,8 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         ResizeMode="NoResize"
-        Title="Connecting" Height="519.539" Width="495.404">
-    <Grid>
+        xmlns:local="clr-namespace:WpfApplication1.View"
+        Icon="..\Images\paste.png"
+        Title="Connecting" Height="286.205" Width="495.404">
+    <!--<Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -54,12 +56,13 @@
                         </Grid.ColumnDefinitions>
                         <GroupBox Grid.Column="0" Header="Com Ports:"  Margin="0 ,10 ,0 ,0">
                             
-                            <!--<ComboBox Name="ComPortsCombo" Margin="10"/>-->
+                            --><!--<ComboBox Name="ComPortsCombo" Margin="10"/>--><!--
                             <ComboBox ItemsSource="{Binding CommPorts}" DisplayMemberPath="DeviceInfo"
                                       SelectedItem="{Binding SelectedCommPort, Mode=TwoWay}" MinWidth="100" MaxWidth="300"
                                       IsEnabled="{Binding EnableDisableSettings}"  Margin="10"/>
                         </GroupBox>
-                        <Button Content="Refresh" Grid.Column="1" Margin="15,35,10,10"/>
+                        <Button Content="Refresh" Grid.Column="1" Margin="15,35,10,10" Command="{Binding RefreshPorts}">
+                        </Button> 
                     </Grid>
                 </Grid>
 
@@ -71,17 +74,25 @@
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
 
-                    <GroupBox  Grid.Row="0" Header="Baud rates:" Name="BaudRate" Margin="15" >
+                    --><!--<GroupBox  Grid.Row="0" Header="Baud rates:" Name="BaudRate" Margin="15" >
                         <StackPanel>
-                            <RadioButton Content="9600"   Margin="20,8,0,0" IsChecked="True"/>
-                            <RadioButton Content="19200"  Margin="20,8,0,0" />
-                            <RadioButton Content="38400"  Margin="20,8,0,0" />
-                            <RadioButton Content="57600"  Margin="20,8,0,0" />
-                            <RadioButton Content="115200" Margin="20,8,0,0" />
+                            <RadioButton Name="R9600" Content="9600"   Margin="20,8,0,0" IsChecked="True" IsEnabled="{Binding EnableDisableSettings}"/>
+                            <RadioButton Name="R19200" Content="19200"  Margin="20,8,0,0"  IsEnabled="{Binding EnableDisableSettings}"/>
+                            <RadioButton Name="R38400" Content="38400"  Margin="20,8,0,0" IsEnabled="{Binding EnableDisableSettings}"/>
+                            <RadioButton Name="R57600"  Content="57600"  Margin="20,8,0,0" IsEnabled="{Binding EnableDisableSettings}" />
+                            <RadioButton Name="R115200" Content="115200" Margin="20,8,0,0" IsEnabled="{Binding EnableDisableSettings}"/>
                         </StackPanel>
-                    </GroupBox>
+                    </GroupBox>--><!--
+                    <StackPanel Grid.Row="0">
+                        <GroupBox Header="Baud rates:">
+                            <ComboBox ItemsSource="{Binding BaudRates}" DisplayMemberPath="BaudRateName" 
+                                  SelectedValue="{Binding SelectedBaudRate, Mode=TwoWay}" 
+                                  SelectedValuePath="BaudRateValue" IsEnabled="{Binding EnableDisableSettings}"
+                                  Margin="25" Padding="7" MinWidth="100"/>
+                        </GroupBox>
+                    </StackPanel>
                     <GroupBox Grid.Row="1" Header="Stop Bits" Name="StopBits" Margin="15,0,15,15" >
-                        <StackPanel>
+                        <StackPanel IsEnabled="{Binding EnableDisableSettings}">
                             <RadioButton Content="1"   Margin="20,8,0,0" IsChecked="True"/>
                             <RadioButton Content="2"  Margin="20,8,0,0" />
                         </StackPanel>
@@ -157,5 +168,64 @@
 
 
         </Grid>
+    </Grid>-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0" Header="Serial Port Settings" Margin="17" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0 5 0 5">
+                    <Label Content="COM* port:" Width="90" Foreground="#FF555555"/>
+                    <ComboBox ItemsSource="{Binding CommPorts}" DisplayMemberPath="DeviceInfo" SelectedItem="{Binding SelectedCommPort, Mode=TwoWay}" MinWidth="100" MaxWidth="300"
+                                      IsEnabled="{Binding EnableDisableSettings}"/>
+                    <Button Content="Refresh" ToolTip="Refresh COM* ports" Command="{Binding RefreshPorts}" Margin="15,0,0,0" Padding="10,10,10,0"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0 0 0 5">
+                    <Label Content="Baud rate:" Width="90" Foreground="#FF555555"/>
+                    <ComboBox ItemsSource="{Binding BaudRates}" DisplayMemberPath="BaudRateName" SelectedValue="{Binding SelectedBaudRate, Mode=TwoWay}" SelectedValuePath="BaudRateValue"
+                                      IsEnabled="{Binding EnableDisableSettings}" MinWidth="100"/>
+                    <Label Content="Parity:" Margin="20 0 0 0" Foreground="#FF555555"/>
+                    <ComboBox ItemsSource="{Binding Parities}" DisplayMemberPath="ParityName" SelectedValue="{Binding SelectedParity, Mode=TwoWay}" SelectedValuePath="ParityValue"
+                                      IsEnabled="{Binding EnableDisableSettings}" MinWidth="100"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0 0 0 5">
+                    <Label Content="Data bits:" Width="90" Foreground="#FF555555"/>
+                    <ComboBox ItemsSource="{Binding DataBits}" SelectedItem="{Binding SelectedDataBits, Mode=TwoWay}"
+                                      IsEnabled="{Binding EnableDisableSettings}" MinWidth="70"/>
+                    <Label Content="Stop bits:" Margin="20 0 0 0" Foreground="#FF555555"/>
+                    <ComboBox ItemsSource="{Binding StopBitsList}" DisplayMemberPath="StopBitsName" SelectedValue="{Binding SelectedStopBits, Mode=TwoWay}" SelectedValuePath="StopBitsValue"
+                                      IsEnabled="{Binding EnableDisableSettings}" MinWidth="100"/>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0 0 0 5">
+                    <CheckBox VerticalAlignment="Center" VerticalContentAlignment="Center" IsChecked="{Binding IsDTR, Mode=TwoWay}" Content="Data Terminal Ready" Margin="85 0 0 0"
+                                      IsEnabled="{Binding EnableDisableSettings}"/>
+                    <CheckBox VerticalAlignment="Center" VerticalContentAlignment="Center" IsChecked="{Binding IsRTS, Mode=TwoWay}" Content="Request To Send" Margin="20 0 0 0"
+                                      IsEnabled="{Binding EnableDisableSettings}"/>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Row="1" Header="Switch" Margin="17,0,17,17" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="START COMMUNICATION" Command="{Binding Open2}" Padding="10 3" Margin="5"
+                                Foreground="Green"/>
+                <Button Grid.Column="1" Content="STOP COMMUNICATION" Command="{Binding Close}" Padding="10 3" Margin="5"
+                                Foreground="Red"/>
+            </Grid>
+        </GroupBox>
     </Grid>
+
+
 </Window>

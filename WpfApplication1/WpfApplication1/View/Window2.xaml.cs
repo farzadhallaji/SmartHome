@@ -11,23 +11,22 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using WpfApplication1.ViewModel;
 using WpfApplication1.Model;
+using WpfApplication1.ViewModel;
 
 namespace WpfApplication1.View
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
-
-            GlobalVar.viewModel = new SerialCommViewModel();
             this.DataContext = GlobalVar.viewModel;
             Closing += GlobalVar.viewModel.OnWindowClosing;
+
         }
     }
 }

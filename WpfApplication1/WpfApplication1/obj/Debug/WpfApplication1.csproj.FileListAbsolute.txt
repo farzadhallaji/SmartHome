@@ -8,10 +8,22 @@ C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
-C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\MainWindow - Copy.baml
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Window1.baml
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\MainWindow - Copy.g.cs
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Window1.g.cs
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Debug.baml
 C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Debug.g.cs
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\NLog.dll
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\bin\Debug\NLog.xml
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Window2.g.cs
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.lref
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\Window2.baml
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\ConnectingSetting.baml
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\View\ConnectingSetting.g.cs
+C:\Users\virtualwin10\Documents\GitHub\SmartHome\WpfApplication1\WpfApplication1\obj\Debug\GeneratedInternalTypeHelper.g.cs
