@@ -37,7 +37,7 @@
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
-                                    <CheckBox Grid.Column="0" x:Name="Autoscroll" VerticalAlignment="Center"
+                                    <CheckBox Grid.Column="0" x:Name="Autoscroll" Visibility="Hidden" VerticalAlignment="Center"
                                           VerticalContentAlignment="Center" 
                                           IsChecked="{Binding IsAutoscrollChecked, Mode=TwoWay,
                                     UpdateSourceTrigger=PropertyChanged}" Content="{Binding ScrollConfirm}" IsEnabled="False"/>

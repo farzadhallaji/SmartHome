@@ -243,15 +243,6 @@ namespace WpfApplication1.ViewModel
             }
         }
 
-        public ICommand OpenLink
-        {
-            get
-            {
-                _OpenLink = new RelayCommand(
-                    param => System.Diagnostics.Process.Start("https://github.com/heiswayi/SerialComm"));
-                return _OpenLink;
-            }
-        }
 
         public ICommand RefreshPorts
         {
@@ -319,11 +310,11 @@ namespace WpfApplication1.ViewModel
                 SelectedParity = Parity.None;
                 SelectedDataBits = 8;
                 SelectedStopBits = StopBits.One;
-                SelectedLineEnding = "";
+                SelectedLineEnding = "\r\n";
                 IsDTR = true;
                 IsRTS = true;
                 FileLocation = AssemblyDirectory;
-                SelectedFileExtension = FileExtensions[0];
+                //SelectedFileExtension = FileExtensions[0];
                 WindowTitle = AppTitle + " (" + GetConnectionStatus() + ")";
                 EnableDisableSettings = true;
                 ScrollOnTextChanged = true;
@@ -331,6 +322,20 @@ namespace WpfApplication1.ViewModel
             }
             catch
             {
+                SelectedBaudRate = 9600;
+                SelectedParity = Parity.None;
+                SelectedDataBits = 8;
+                SelectedStopBits = StopBits.One;
+                SelectedLineEnding = "\r\n";
+                IsDTR = true;
+                IsRTS = true;
+                FileLocation = AssemblyDirectory;
+                //SelectedFileExtension = FileExtensions[0];
+                WindowTitle = AppTitle + " (" + GetConnectionStatus() + ")";
+                EnableDisableSettings = true;
+                ScrollOnTextChanged = true;
+                EnableDisableSettings = true;
+
             }
         }
         #endregion
@@ -354,7 +359,8 @@ namespace WpfApplication1.ViewModel
                     byte[] data = new byte[_SerialPort.BytesToRead];
                     _SerialPort.Read(data, 0, data.Length);
                     string s = Encoding.GetEncoding("Windows-1252").GetString(data);
-                    OutputText += s + SelectedLineEnding;
+                    //OutputText += s + SelectedLineEnding;
+                    OutputText += s;
                     OnPropertyChanged("OutputText");
                 }
                 catch (Exception ex)
@@ -413,7 +419,7 @@ namespace WpfApplication1.ViewModel
             {
                 try
                 {
-                    _SerialPort.Write(InputText + "\r\n");
+                    _SerialPort.Write(InputText + SelectedLineEnding);
                     //////////////////////////////////////////////////////////////////////////
                     InputText = String.Empty;
 
